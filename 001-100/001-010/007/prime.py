@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import sys
-sys.path.append("../lib")
+sys.path.append("../../../lib")
 from natural import Prime
 
 p = Prime()
