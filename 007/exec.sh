@@ -1,0 +1,1 @@
+time ./prime.py
