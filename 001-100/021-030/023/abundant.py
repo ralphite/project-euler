@@ -14,9 +14,14 @@ def is_abundant(n):
                 a.append(n/i)
     return sum(a)>n
 
+a=[i for i in range(1,28124) if is_abundant(i)]
+h={}
+for i in a:
+    h[i]=True
+
 def is_sum_abu(n):
     for i in range(1,int(n/2)+1):
-        if is_abundant(i) and is_abundant(n-i):
+        if h.has_key(i) and h.has_key(n-i):
             return True
     return False
 
